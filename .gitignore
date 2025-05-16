@@ -1,6 +1,6 @@
 # myst interoperability
-*/_build/
 # myst-refsort/_build/
+*/_build/
 myst-refsort/refsort-out/*.tex
 myst-refsort/refsort-out/*.pdf
 myst-refsort/refsort-out/*.bib
