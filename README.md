@@ -7,13 +7,13 @@ Pretty much the (unelegant) process I did by hand in order to get that result, j
 Using the basic pip / python install:
 ```{bash}
 pip install git+https://github.com/felimomo/MyST-RefSort.git
-cd Myst-RefSort/myst-refsort
 ```
 
 ## Run
 Instead of running `myst build your-file.md` locally in your file's directory, switch to this directory and run:
 ```{bash}
-python myst-refsort/run/main.py -f path/to/your/markdown/file.md
+cd Myst-RefSort/myst-refsort
+python run/main.py -f path/to/your/markdown/file.md
 ```
 
 The output pdf along with the generating `.tex` and `.bib` files will be placed in `myst-refsort/refsort-out`.
