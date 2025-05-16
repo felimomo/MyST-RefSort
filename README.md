@@ -6,9 +6,8 @@ Pretty much the (unelegant) process I did by hand in order to get that result, j
 ## Install
 Using the basic pip / python install:
 ```{bash}
-git clone https://github.com/felimomo/MyST-RefSort.git
+pip install git+https://github.com/felimomo/MyST-RefSort.git
 cd Myst-RefSort/myst-refsort
-pip install .
 ```
 
 ## Run
@@ -16,3 +15,13 @@ Instead of running `myst build your-file.md` locally in your file's directory, s
 ```{bash}
 python myst-refsort/run/main.py -f path/to/your/markdown/file.md
 ```
+
+The output pdf along with the generating `.tex` and `.bib` files will be placed in `myst-refsort/refsort-out`.
+
+## Important note
+At the moment, the base filename of the markdown file must match the base filename of the pdf export for the script to work, i.e. if the target markdown file is `paper.md`, the export file must be specified to be `paper.pdf`. 
+
+## Work in progress / reach out / contribute!
+This is a very raw piece of code and still needs lots of work to make it functional over a wider range of scenarios (even though the scope is narrow—--sorting references alphabetically for tex-based publications)!
+Please don't hesitate to reach out, make pull requests, open issues, etc.
+I made this out of my own need for it, and I would love for it to be useful for others too!
