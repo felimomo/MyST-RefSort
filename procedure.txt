@@ -1,0 +1,30 @@
+1. natbib -> biblatex with biber backend:
+
+
+	\usepackage{natbib} --> \usepackage[style=authoryear,backend=biber]{biblatex}
+
+
+2. \citep -> \parencite everywhere 
+	[replace all]
+
+3. comment out \bibliographystyle and \bibliography
+
+4. add \printbibliography after the commented lines above
+
+5. \addbibresource{main.bib}
+	[line 65 - one line above \begin{document} to make sure]
+
+
+6. Replace-all \i with i in main.bib
+
+7. Replace-all ' &' for ' \&' to prevent biblatex or whatever from reading '&' as an alignment character
+
+8. erase existing .bbl and .aux documnet document
+
+9. pdflatex fisheries
+
+10. biber fisheries
+
+11. pdflatex fisheries; pdflatex fisheries
+
+12. mv pdf to output location
