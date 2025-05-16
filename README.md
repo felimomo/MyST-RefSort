@@ -12,6 +12,7 @@ pip install .
 ```
 
 ## Run
+Instead of running `myst build your-file.md` locally in your file's directory, switch to this directory and run:
 ```{bash}
-python run/main.py -f path/to/your/markdown/file.md
+python myst-refsort/run/main.py -f path/to/your/markdown/file.md
 ```
