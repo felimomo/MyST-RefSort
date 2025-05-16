@@ -1,5 +1,11 @@
 # myst interoperability
-_build/*
+myst-refsort/_build/
+myst-refsort/refsort-out/*.tex
+myst-refsort/refsort-out/*.pdf
+myst-refsort/refsort-out/*.bib
+
+# mac
+.DS_Store
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
