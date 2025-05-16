@@ -44,7 +44,18 @@ mrs.rm_bbl_aux(path=".", base_fname=base_fname)
 
 # 5. biblatex commands
 
+# few line edits
+mrs.use_biblatex(fname_no_path)
+mrs.add_bibresources(fname_no_path)
+mrs.print_bibliography(fname_no_path)
+
+# replace all
+mrs.citep_to_parencite(fname_no_path)
+
 # 6. bibfile edits
+
+# replace all
+mrs.bib_file_changes(fname_no_path)
 
 # 7. recompile tex
 
