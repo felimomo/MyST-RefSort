@@ -1,5 +1,3 @@
-import os
-
 def bib_file_changes(tex_file_path):
     with open(tex_file_path, "r") as tex_file:
         tex_file_cont = tex_file.read()
